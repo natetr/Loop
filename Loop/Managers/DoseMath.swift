@@ -383,6 +383,7 @@ extension Collection where Iterator.Element == GlucoseValue {
 //        {
 //            maxBasalRate = scheduledBasalRate
 //        }
+//dm commented lines above to allow high temping sooner upon recovery from low
 
         let temp = correction?.asTempBasal(
             scheduledBasalRate: scheduledBasalRate,
