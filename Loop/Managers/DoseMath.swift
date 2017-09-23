@@ -374,14 +374,14 @@ extension Collection where Iterator.Element == GlucoseValue {
         )
 
         let scheduledBasalRate = basalRates.value(at: date)
-        var maxBasalRate = maxBasalRate
+        let maxBasalRate = maxBasalRate
 
         // TODO: Allow `highBasalThreshold` to be a configurable setting
-        if case .aboveRange(min: let min, correcting: _, minTarget: let highBasalThreshold, units: _)? = correction,
-            min.quantity < highBasalThreshold
-        {
-            maxBasalRate = scheduledBasalRate
-        }
+//        if case .aboveRange(min: let min, correcting: _, minTarget: let highBasalThreshold, units: _)? = correction,
+//            min.quantity < highBasalThreshold
+//        {
+//            maxBasalRate = scheduledBasalRate
+//        }
 
         let temp = correction?.asTempBasal(
             scheduledBasalRate: scheduledBasalRate,
