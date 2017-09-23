@@ -2,7 +2,7 @@
   "commitish" : "v3.14.1",
   "iOS" : [
     {
-      "hash" : "611d065fc5258ebf6a8a9cb01a5da1481bf400cf4a10ad18615f52b20e9a014e",
+      "hash" : "43fe7a9e17b2e602058b06e2c829ae3849ea735adbe57d7eabca07fd15181fc9",
       "name" : "Amplitude"
     }
   ]

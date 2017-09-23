@@ -1,4 +1,4 @@
-github "dm61/LoopKit" "master"
+github "dm61/LoopKit" "carb_absorb1_expire1.5"
 github "LoopKit/xDripG5" ~> 0.8.1
 github "i-schuetz/SwiftCharts" "master"
 github "mddub/dexcom-share-client-swift" == 0.4.1

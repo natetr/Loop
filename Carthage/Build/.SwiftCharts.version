@@ -2,7 +2,7 @@
   "commitish" : "6b55a26a7b0b95e49202ddc1db5404702fce114f",
   "iOS" : [
     {
-      "hash" : "dec407bff4ed18eaffb22498b7e65fb04db5f2814b33f61d1ef087c563d1ca26",
+      "hash" : "d98d0d79b1cb6987699196d42a3cf24edefcd5a496cbc50558c2f92fbd23e70c",
       "name" : "SwiftCharts"
     }
   ]
