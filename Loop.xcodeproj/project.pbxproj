@@ -752,6 +752,7 @@
 				437D9BA11D7B5203007245E8 /* Loop.xcconfig */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		43776F8D1B8022E90074EA36 /* Products */ = {
 			isa = PBXGroup;
