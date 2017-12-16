@@ -156,11 +156,11 @@ extension TempBasalRecommendation {
                 return nil
             } else if matchesRate(scheduledBasalRate) {
                 // If our new temp matches the scheduled rate, cancel the current temp
-                return .cancel
+                return self //dm set temp to current Loop default instead of canceling
             }
         } else if matchesRate(scheduledBasalRate) {
             // If we recommend the in-progress scheduled basal rate, do nothing
-            return nil
+            return self //dm set temp to current Loop default instead of canceling
         }
 
         return self
@@ -374,14 +374,14 @@ extension Collection where Iterator.Element == GlucoseValue {
         )
 
         let scheduledBasalRate = basalRates.value(at: date)
-        var maxBasalRate = maxBasalRate
+        let maxBasalRate = maxBasalRate
 
         // TODO: Allow `highBasalThreshold` to be a configurable setting
-        if case .aboveRange(min: let min, correcting: _, minTarget: let highBasalThreshold, units: _)? = correction,
-            min.quantity < highBasalThreshold
-        {
-            maxBasalRate = scheduledBasalRate
-        }
+//dm        if case .aboveRange(min: let min, correcting: _, minTarget: let highBasalThreshold, units: _)? = correction,
+//dm            min.quantity < highBasalThreshold
+//dm        {
+//dm            maxBasalRate = scheduledBasalRate
+//dm        }
 
         let temp = correction?.asTempBasal(
             scheduledBasalRate: scheduledBasalRate,
