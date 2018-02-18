@@ -2322,21 +2322,8 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "";
-<<<<<<< HEAD
-<<<<<<< HEAD
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-=======
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
->>>>>>> parent of eb409a0... update identifier, allow temps
-				CURRENT_PROJECT_VERSION = 40;
-=======
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-<<<<<<< HEAD
-				CURRENT_PROJECT_VERSION = 42;
->>>>>>> LoopKit/master
-=======
 				CURRENT_PROJECT_VERSION = 43;
->>>>>>> LoopKit/master
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
